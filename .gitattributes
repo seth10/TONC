@@ -1,3 +1,7 @@
-devkitARM/* linguist-vendored
-tonc-code/* linguist-vendored
-visualboyadvance-m.app/* linguist-vendored
+devkitARM linguist-vendored
+tonc-code linguist-vendored
+visualboyadvance-m.app linguist-vendored
+
+devkitARM filter=lfs diff=lfs merge=lfs -text
+tonc-code filter=lfs diff=lfs merge=lfs -text
+visualboyadvance-m.app filter=lfs diff=lfs merge=lfs -text
