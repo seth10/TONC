@@ -1,4 +1,4 @@
-export PATH=/Users/setht/Desktop/Development/GBA/devkitARM/bin:$PATH
+export PATH=$(cd ..; pwd)/devkitARM/bin:$PATH
 # name of the directory this shell script resides in
 name=$(basename $(cd $(dirname $0) && pwd))
 
@@ -9,4 +9,4 @@ gbafix ${name}.gba
 
 rm ${name}.{elf,o}
 #read -rsp $'Press any key to continue...\n' -n 1 key
-open -a /Applications/visualboyadvance-m.app/Contents/MacOS/visualboyadvance-m ${name}.gba
+open -a $(cd ..; pwd)/visualboyadvance-m.app/Contents/MacOS/visualboyadvance-m ${name}.gba
